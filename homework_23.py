@@ -20,7 +20,7 @@ async def get_visualcrossing_api(client, url):
     api_url = await get_json(client, url)
     temperature = api_url["currentConditions"]["temp"]
 
-    print(f"Temperature by 'Visualcrossing.com' is: {temperature} ºC")
+    print(f"Current New York temperature by 'Visualcrossing.com' is: {temperature} ºC")
     return temperature
 
 
@@ -28,7 +28,7 @@ async def get_oceandrivers_api(client, url):
     api_url = await get_json(client, url)
     temperature = api_url["TEMPERATURE"]
 
-    print(f"Temperature by 'Oceandrivers.com' is: {temperature} ºC")
+    print(f"Current New York temperature by 'Oceandrivers.com' is: {temperature} ºC")
     return temperature
 
 
@@ -36,7 +36,7 @@ async def get_open_meteo_api(client, url):
     api_url = await get_json(client, url)
     temperature = api_url["current_weather"]["temperature"]
 
-    print(f"Temperature by 'Open-meteo.com' is: {temperature} ºC")
+    print(f"Current New York temperature by 'Open-meteo.com' is: {temperature} ºC")
     return temperature
 
 
@@ -44,7 +44,7 @@ async def get_weatherapi_api(client, url):
     api_url = await get_json(client, url)
     temperature = api_url["current"]["temp_c"]
 
-    print(f"Temperature by 'Weatherapi.com' is: {temperature} ºC")
+    print(f"Current New York temperature by 'Weatherapi.com' is: {temperature} ºC")
     return temperature
 
 
